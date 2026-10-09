@@ -45,6 +45,8 @@ Usar npm.cmd y npx.cmd; no modificar ExecutionPolicy:
 
 Para cada spec autorizada, definir primero las pruebas verificables y solo después implementar el código mínimo que las satisfaga. Elegir la prueba proporcional al cambio: chequeo estático/tipos, prueba unitaria/de componente, o prueba de navegador/a11y. Esta regla no autoriza crear una spec ni implementar funcionalidad durante Bootstrap.
 
+El test `@a11y` de Bootstrap verifica disponibilidad de Axe sobre el scaffold. Cada spec autorizada debe añadir sus propios criterios de accesibilidad y exigir cero violaciones automáticas en la superficie que implemente.
+
 ## Superficies canónicas
 
 Una spec autorizada usa docs/, knowledge/, src/assets/ y specs/AGENTS.md; no consulta el Vault ni fuentes originales para redescubrir contenido, UX o assets.
