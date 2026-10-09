@@ -30,3 +30,33 @@ La estructura es documental. No hay instalación, comandos, tests ejecutables, d
 ## Origen
 
 U-03 / U03-T04 · D-023, D-024, D-027 y D-029.
+
+## Documentación vigente
+Cuando una spec autorizada requiera APIs o dependencias, usar documentación oficial compatible con las versiones reales. Context7 MCP está pendiente de remediación OAuth; no asumir que está disponible.
+
+## Comandos Windows PowerShell
+Usar npm.cmd y npx.cmd; no modificar ExecutionPolicy:
+- npm.cmd run typecheck
+- npm.cmd run build
+- npm.cmd run test:run
+- npm.cmd run test:e2e
+- npm.cmd run test:a11y
+- npx.cmd playwright install chromium (solo si falta)
+
+## Superficies canónicas
+Una spec autorizada usa docs/, knowledge/, src/assets/ y specs/AGENTS.md; no consulta el Vault ni fuentes originales para redescubrir contenido, UX o assets.
+
+## Documentación vigente
+Cuando una spec autorizada requiera APIs o dependencias, usar documentación oficial compatible con las versiones reales. Context7 MCP está pendiente de remediación OAuth; no asumir que está disponible.
+
+## Comandos Windows PowerShell
+Usar npm.cmd y npx.cmd; no modificar ExecutionPolicy:
+- npm.cmd run typecheck
+- npm.cmd run build
+- npm.cmd run test:run
+- npm.cmd run test:e2e
+- npm.cmd run test:a11y
+- npx.cmd playwright install chromium (solo si falta)
+
+## Superficies canónicas
+Una spec autorizada usa docs/, knowledge/, src/assets/ y specs/AGENTS.md; no consulta el Vault ni fuentes originales para redescubrir contenido, UX o assets.
