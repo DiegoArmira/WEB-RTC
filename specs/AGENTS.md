@@ -25,38 +25,30 @@ Debe existir unidad autorizada, `spec.md` maduro, criterios de aceptación verif
 
 ## Estado actual
 
-La estructura es documental. No hay instalación, comandos, tests ejecutables, dependencias, configuración de build ni código hasta que una spec autorizada los defina.
+M-Bootstrap-01 materializó el scaffold React + TypeScript + Vite, el lockfile y el harness de pruebas. No hay funcionalidad RTC hasta que exista una spec autorizada.
+
+## Documentación vigente
+
+Context7 está configurado como MCP OAuth de Codex. Cuando una spec autorizada requiera APIs o dependencias, consultar Context7 con una consulta acotada a la versión real; si no está disponible o resulta insuficiente, usar documentación oficial compatible. No incluir secretos ni contenido sensible en consultas documentales.
+
+## Comandos Windows PowerShell
+
+Usar npm.cmd y npx.cmd; no modificar ExecutionPolicy:
+- npm.cmd run typecheck
+- npm.cmd run build
+- npm.cmd run test:run
+- npm.cmd run test:e2e
+- npm.cmd run test:a11y
+- npx.cmd playwright install chromium (solo si falta)
+
+## Regla test-first
+
+Para cada spec autorizada, definir primero las pruebas verificables y solo después implementar el código mínimo que las satisfaga. Elegir la prueba proporcional al cambio: chequeo estático/tipos, prueba unitaria/de componente, o prueba de navegador/a11y. Esta regla no autoriza crear una spec ni implementar funcionalidad durante Bootstrap.
+
+## Superficies canónicas
+
+Una spec autorizada usa docs/, knowledge/, src/assets/ y specs/AGENTS.md; no consulta el Vault ni fuentes originales para redescubrir contenido, UX o assets.
 
 ## Origen
 
-U-03 / U03-T04 · D-023, D-024, D-027 y D-029.
-
-## Documentación vigente
-Cuando una spec autorizada requiera APIs o dependencias, usar documentación oficial compatible con las versiones reales. Context7 MCP está pendiente de remediación OAuth; no asumir que está disponible.
-
-## Comandos Windows PowerShell
-Usar npm.cmd y npx.cmd; no modificar ExecutionPolicy:
-- npm.cmd run typecheck
-- npm.cmd run build
-- npm.cmd run test:run
-- npm.cmd run test:e2e
-- npm.cmd run test:a11y
-- npx.cmd playwright install chromium (solo si falta)
-
-## Superficies canónicas
-Una spec autorizada usa docs/, knowledge/, src/assets/ y specs/AGENTS.md; no consulta el Vault ni fuentes originales para redescubrir contenido, UX o assets.
-
-## Documentación vigente
-Cuando una spec autorizada requiera APIs o dependencias, usar documentación oficial compatible con las versiones reales. Context7 MCP está pendiente de remediación OAuth; no asumir que está disponible.
-
-## Comandos Windows PowerShell
-Usar npm.cmd y npx.cmd; no modificar ExecutionPolicy:
-- npm.cmd run typecheck
-- npm.cmd run build
-- npm.cmd run test:run
-- npm.cmd run test:e2e
-- npm.cmd run test:a11y
-- npx.cmd playwright install chromium (solo si falta)
-
-## Superficies canónicas
-Una spec autorizada usa docs/, knowledge/, src/assets/ y specs/AGENTS.md; no consulta el Vault ni fuentes originales para redescubrir contenido, UX o assets.
+U-03 / U03-T04 · D-023, D-024, D-027, D-029, D-046 y D-048.
