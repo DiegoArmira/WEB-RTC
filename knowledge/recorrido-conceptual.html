@@ -1,0 +1,51 @@
+<!doctype html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RTC — Recorrido conceptual U-02</title>
+<style>
+  :root { --bg:#f7f5ef; --ink:#0d1b3e; --muted:#5b6479; --line:#5b6479; --gold:#c9a84c; --card:#ffffff; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:14px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  main { max-width:980px; margin:32px auto; padding:0 20px; }
+  svg { width:100%; height:auto; display:block; }
+  .title { font-size:20px; font-weight:700; fill:var(--ink); }
+  .label { font-size:14px; font-weight:700; fill:var(--ink); }
+  .small { font-size:12px; fill:var(--muted); }
+  .node { fill:var(--card); stroke:var(--ink); stroke-width:1.2; }
+  .accent { fill:var(--ink); stroke:var(--gold); stroke-width:2; }
+  .accent .label, .accent .small { fill:#fff; }
+  .edge { stroke:var(--line); stroke-width:1.5; fill:none; }
+</style>
+<main>
+<svg viewBox="0 0 960 790" role="img" aria-labelledby="title desc">
+  <title id="title">Recorrido conceptual de la landing institucional RTC</title>
+  <desc id="desc">La lectura inicia en apertura institucional, continúa por servicios, capacidades, experiencia y evidencia visual antes de contacto; un atajo permite ir de apertura a contacto.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#5b6479"/></marker></defs>
+  <text x="40" y="42" class="title">RTC — recorrido conceptual single-page</text>
+  <text x="40" y="66" class="small">Artefacto de UX conceptual; no representa UI final ni componentes.</text>
+  <path class="edge" marker-end="url(#arrow)" d="M280 172 L280 210"/>
+  <path class="edge" marker-end="url(#arrow)" d="M280 282 L280 320"/>
+  <path class="edge" marker-end="url(#arrow)" d="M280 392 L280 430"/>
+  <path class="edge" marker-end="url(#arrow)" d="M280 502 L280 540"/>
+  <path class="edge" marker-end="url(#arrow)" d="M280 612 L280 650"/>
+  <path class="edge" marker-end="url(#arrow)" d="M460 136 C760 136 760 686 460 686"/>
+  <rect x="100" y="104" width="360" height="68" rx="10" class="accent"/>
+  <text x="124" y="133" class="label">1. Apertura institucional</text><text x="124" y="154" class="small">Marca · lema · propuesta · atajo a contacto</text>
+  <rect x="100" y="214" width="360" height="68" rx="10" class="node"/>
+  <text x="124" y="243" class="label">2. Servicios prioritarios</text><text x="124" y="264" class="small">Líneas de base · evaluaciones · capacitación</text>
+  <rect x="100" y="324" width="360" height="68" rx="10" class="node"/>
+  <text x="124" y="353" class="label">3. Capacidades y enfoques</text><text x="124" y="374" class="small">Investigación · diagnósticos · monitoreo</text>
+  <rect x="100" y="434" width="360" height="68" rx="10" class="node"/>
+  <text x="124" y="463" class="label">4. Experiencia comprobable</text><text x="124" y="484" class="small">Cinco casos · logos disponibles · sin aval</text>
+  <rect x="100" y="544" width="360" height="68" rx="10" class="node"/>
+  <text x="124" y="573" class="label">5. Evidencia de trabajo</text><text x="124" y="594" class="small">Fotos contextuales · privacidad previa</text>
+  <rect x="100" y="654" width="360" height="68" rx="10" class="accent"/>
+  <text x="124" y="683" class="label">6. Contacto institucional</text><text x="124" y="704" class="small">Correo · teléfono · dirección</text>
+  <text x="570" y="345" class="label">Lecturas posibles</text>
+  <text x="570" y="373" class="small">Principal: apertura → servicios →</text>
+  <text x="570" y="391" class="small">capacidades → experiencia →</text>
+  <text x="570" y="409" class="small">evidencia → contacto.</text>
+  <text x="570" y="449" class="small">Atajo: apertura → contacto.</text>
+  <text x="570" y="489" class="small">Sin navegación compleja, blog,</text>
+  <text x="570" y="507" class="small">formularios ni funcionalidades extra.</text>
+</svg>
+</main>
