@@ -10,14 +10,16 @@ mode: read_only
 
 Este es un protocolo/prompt de revisión, no un agente instalado ni persistente.
 Se ejecuta después de una implementación visual significativa y antes del paquete
-de QA Senior de Diego. No crea, edita ni borra archivos.
+de QA Senior de Diego. No crea, edita ni borra archivos, ni ejecuta comandos ni
+añade pruebas: solamente lee la evidencia de la suite ya definida para la spec.
 
 ## Entradas
 
 - `spec.md` y `design-plan.md` de la spec.
 - Fuentes RTC canónicas enumeradas en la skill de diseño.
 - Capturas o ejecución visible en viewport móvil y escritorio.
-- Resultados de pruebas y a11y.
+- Resultados ya existentes de `npm.cmd run typecheck`, `npm.cmd run build`,
+  `npm.cmd run test:run`, `npm.cmd run test:e2e` y `npm.cmd run test:a11y`.
 
 ## Procedimiento
 
@@ -50,4 +52,3 @@ de QA Senior de Diego. No crea, edita ni borra archivos.
 
 El veredicto no es aceptación final. Diego realiza la validación de usuario y
 autoriza cualquier transición posterior.
-

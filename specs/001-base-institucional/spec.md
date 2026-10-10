@@ -27,6 +27,7 @@ Usar únicamente estas superficies del repositorio:
 - `knowledge/manifiesto-activos.md`
 - `src/assets/`
 - `specs/AGENTS.md`
+- `.codex/skills/rtc-institutional-design/`
 
 No consultar el Vault ni fuentes originales para reinterpretar contenido, UX o
 activos. Si hay una ambigüedad material, detenerse y elevarla a Office/ORQ.
@@ -102,4 +103,4 @@ Este spec **no autoriza por sí solo** la ejecución de Codex. Tras aprobación 
 del spec y autorización explícita de ejecución, usar este único texto en Codex/VS
 Code:
 
-> Lee `specs/001-base-institucional/spec.md` y `specs/AGENTS.md`. Este spec está autorizado para ejecución. Primero crea `plan.md`, `tasks.md` y `bitacora.md`; después define y ejecuta las pruebas indicadas antes de implementar el código mínimo. Usa solo `docs/`, `knowledge/` y `src/assets/` como superficies fuente. No despliegues, no agregues capacidades excluidas y detente para elevar cualquier ambigüedad material, cambio de alcance, seguridad o arquitectura.
+> Lee `specs/001-base-institucional/spec.md`, `specs/AGENTS.md` y la skill `.codex/skills/rtc-institutional-design/`. Este spec está autorizado para ejecución. Primero crea `plan.md`, `tasks.md`, `bitacora.md` y `design-plan.md`; después define y ejecuta las pruebas indicadas antes de implementar el código mínimo. Usa solo `docs/`, `knowledge/` y `src/assets/` como superficies fuente. No despliegues, no agregues capacidades excluidas y detente para elevar cualquier ambigüedad material, cambio de alcance, seguridad o arquitectura.

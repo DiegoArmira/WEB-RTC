@@ -1,5 +1,5 @@
 ---
-status: draft_for_orq_approval
+status: partially_approved
 unit: U-04
 spec: 001-base-institucional
 date: 2026-10-10
@@ -11,12 +11,14 @@ date: 2026-10-10
 
 Autorizar o rechazar, de forma independiente:
 
-1. la activación posterior de la skill local propuesta `rtc-institutional-design`;
-2. la incorporación controlada de la skill externa `frontend-design`;
+1. la activación de la skill local propuesta `rtc-institutional-design`;
+2. la incorporación controlada de la skill externa `frontend-design` mediante
+   instalación desde catálogo;
 3. el protocolo temporal de revisión visual.
 
-Este documento no activa skills, no instala paquetes, no crea agentes persistentes y
-no autoriza la ejecución de Codex ni la implementación de la spec 001.
+No crea agentes persistentes ni autoriza la ejecución de Codex ni la implementación
+de la spec 001. La instalación externa queda pendiente de evidencia de la terminal
+Windows de Diego.
 
 ## Brecha que resuelve
 
@@ -69,20 +71,20 @@ entrega existente y no se presenta como una auditoría independiente de Diego.
 
 ## Modalidades para la skill externa
 
-### A. Importación reproducible — recomendada
+### A. Importación reproducible — no seleccionada
 
 Tras aprobación ORQ, incorporar una copia atribuida del `SKILL.md` revisado en el
 repositorio, junto con licencia y SHA del origen. Codex la descubre como skill
 local. Ventajas: contenido revisable, trazable y estable por commit. Riesgo:
 requiere mantener atribución y decidir manualmente futuras actualizaciones.
 
-### B. Instalación desde catálogo
+### B. Instalación desde catálogo — seleccionada por ORQ
 
-Tras aprobación ORQ, usar el instalador de `skills.sh` para añadir únicamente
-`frontend-design`. Antes de ejecutar el comando se debe verificar cómo fija el
-instalador la versión; no se debe confiar en una rama móvil sin registrar el
-resultado. Ventaja: operación más corta. Riesgo: menor control sobre cambios del
-catálogo y su ubicación local.
+Usar el instalador de `skills.sh` para añadir únicamente `frontend-design`. Se
+debe registrar la salida que indique versión y ubicación, y no se debe confiar en
+una rama móvil sin registrar el resultado. Ventaja: operación más corta y
+capacidad reutilizable en proyectos futuros. Riesgo: menor control sobre cambios
+del catálogo y su ubicación local.
 
 No se instalará un paquete inicial completo ni una skill de descubrimiento como
 dependencia permanente: no soluciona directamente la dirección visual de RTC.
@@ -107,4 +109,3 @@ dependencia permanente: no soluciona directamente la dirección visual de RTC.
 - La a11y de la spec exige cero violaciones automáticamente detectables; la skill
   no sustituye Axe, pruebas ni revisión manual.
 - Diego conserva la aceptación final como QA Senior.
-

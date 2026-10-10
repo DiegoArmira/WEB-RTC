@@ -47,6 +47,14 @@ Para cada spec autorizada, definir primero las pruebas verificables y solo despu
 
 El test `@a11y` de Bootstrap verifica disponibilidad de Axe sobre el scaffold. Cada spec autorizada debe añadir sus propios criterios de accesibilidad y exigir cero violaciones automáticas en la superficie que implemente.
 
+## Diseño institucional RTC
+
+Cuando una spec autorizada implemente o revise UI institucional RTC, usar la skill
+local `.codex/skills/rtc-institutional-design/` antes de escribir código. La skill
+no sustituye el spec, U-02, `knowledge/`, los activos autorizados, pruebas ni la
+aprobación de Diego como QA Senior. Su revisión visual consume la evidencia ya
+requerida por la spec; no añade runners, dependencias ni comandos de prueba.
+
 ## Superficies canónicas
 
 Una spec autorizada usa docs/, knowledge/, src/assets/ y specs/AGENTS.md; no consulta el Vault ni fuentes originales para redescubrir contenido, UX o assets.
