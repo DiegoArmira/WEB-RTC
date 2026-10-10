@@ -136,3 +136,17 @@ criterios:
 
 D-064 autoriza solo esta corrección de planificación. Una implementación v2
 requerirá una autorización posterior y explícita de Diego/ORQ.
+
+## Referencias de patrón v2 — D-065
+
+KAMBEA (`https://www.kambea.com/es` y `/es/ao`) y D4Act
+(`https://d4act.com/`) son referencias visuales autorizadas únicamente para
+analizar composición, jerarquía, ritmo, cards, tratamiento de imagen, presentación
+de logos/casos, proceso y contacto. No son fuentes de copy, assets, marca, código
+ni componentes reutilizables.
+
+La revisión v2 deberá documentar qué patrón adopta, adapta o descarta de cada
+referencia. Cuando una dirección necesite copy que no exista literalmente en una
+fuente RTC canónica, deberá marcarlo como propuesta pendiente de aprobación de
+Diego/ORQ: no se permite texto genérico de relleno ni inferir una afirmación
+pública.

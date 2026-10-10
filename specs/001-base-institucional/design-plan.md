@@ -176,3 +176,24 @@ La siguiente revisión de diseño deberá:
 
 Esta sección corrige la planificación; no autoriza código, activos nuevos,
 dependencias, despliegue ni publicación.
+
+## Referencias de patrón para exploración v2 — D-065
+
+Las referencias aportadas por Diego/ORQ se usan como lenguaje visual, no como
+material reutilizable. La propuesta debe distinguir el patrón observado de su
+adaptación propia para RTC.
+
+| Referencia | Patrón a estudiar | Adaptación permitida para RTC | Límite |
+|---|---|---|---|
+| KAMBEA, inicio | Hero fotográfico con titular de alta jerarquía, overlay legible y composición de portada. | Considerar una sola fotografía RTC como apertura solo con su gate RP-04, foco documentado y contraste verificable; mantener el logo RTC y copy canónico. | No copiar imagen, marca, texto, estructura ni afirmaciones de KAMBEA. |
+| KAMBEA, servicios | Cards con icono, numeración, bordes y jerarquía escaneable. | Presentar los cuatro servicios RTC mediante cards diferenciadas; cualquier icono deberá ser propio, semánticamente prescindible y no exigir una dependencia/asset nuevo. | No convertir las cards en un patrón repetitivo sin prioridad o contenido. |
+| KAMBEA, proceso y contacto | Secuencia visual de método y cierre editorial de contacto. | Proponer una secuencia solo si puede sustentarse con proceso RTC canónico; conservar el cierre de contacto como conversación visible y accesible. | “¿Comenzamos a colaborar?” es referencia de intención, no copy autorizado para RTC. |
+| KAMBEA, logos | Logos tratados con escala y alineación uniformes. | Crear una secuencia horizontal o carrusel manual de casos RTC, con logo y texto factual más amplio; controles visibles, teclado/táctil, sin autoplay. | Cada logo sigue asociado exclusivamente a su caso; no implica aval. |
+| D4Act, sectores | Card que une imagen, etiqueta, título y texto breve relacionado. | Enlazar cada foto RTC a un servicio/caso solo cuando el vínculo factual esté documentado; priorizar proporción natural y foco por activo. | No crear sectores, impactos, estadísticas o copy genérico no documentados. |
+
+### Criterios de selección de dirección v2
+
+La propuesta deberá comparar dos o tres direcciones y, para cada una, mostrar cómo
+resuelve: apertura, servicios, experiencia/logos, evidencia fotográfica, contacto,
+mobile y accesibilidad. La recomendación no se implementará sin aprobación de
+Diego/ORQ.

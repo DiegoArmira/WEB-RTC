@@ -136,3 +136,15 @@ fotografías siguen vigentes fuera de este entorno local/no productivo.
   impacto. La próxima planificación debe registrar esa relación explícitamente.
 - D-064 autoriza solo alinear la planificación de diseño v2; ningún cambio de
   código queda autorizado hasta una nueva aprobación explícita de Diego/ORQ.
+
+## 2026-10-10 — Referencias visuales v2 D-065
+
+- Diego/ORQ aporta KAMBEA y D4Act como referencias visuales prioritarias para
+  explorar la v2: composición de portada, jerarquía, cards de servicios, secuencia
+  de proceso, logos/casos, fotografía con texto y cierre de contacto.
+- Las referencias no autorizan reutilizar copy, marca, imágenes, código ni
+  componentes de terceros. El texto de contacto de KAMBEA funciona como intención
+  de diseño, no como copy autorizado de RTC.
+- Todo copy RTC nuevo, genérico o abstraído que no sea literal de fuente canónica
+  queda como propuesta pendiente de revisión de Diego/ORQ; no podrá llegar a la
+  interfaz por inferencia.
