@@ -2,9 +2,9 @@
 
 ## Estado y frontera
 
-Planificación autorizada por D-060. Este documento no autoriza implementación: no
-se han creado ni modificado código, pruebas, configuración, dependencias, activos o
-artefactos de despliegue.
+La planificación inicial fue autorizada por D-060 y la implementación v1 se ejecutó
+bajo D-062. Este documento no autoriza una implementación posterior: la evolución
+visual v2 queda detenida hasta nueva autorización explícita de Diego/ORQ.
 
 La futura entrega será una landing estática React + TypeScript + Vite, local y no
 productiva, con contenido local separado de la composición y activos consumidos solo
@@ -71,7 +71,8 @@ autorizados. Cada logo tercero quedará asociado únicamente con su caso factual
 La secuencia obligatoria será: hacer fallar pruebas de componente, E2E y a11y
 proporcionales; implementar el mínimo; ejecutar los cinco comandos indicados por la
 spec; registrar resultados y evidencia visual móvil/escritorio en `bitacora.md`.
-Esta planificación no ejecutó ninguno.
+La planificación D-060 no ejecutó estos controles; D-062 los ejecutó después para
+la v1 y su evidencia consta en `bitacora.md`.
 
 ## Gates antes de implementación/publicación
 
@@ -95,5 +96,15 @@ Esta planificación no ejecutó ninguno.
 Sin autorización de implementación. La siguiente autorización deberá partir de la
 dirección B de `design-plan.md`, retirar copy fotográfico inferido y aplicar la matriz
 individual MA-07…MA-11. La evidencia futura será D-01…D-04 más E2E móvil/escritorio,
-teclado, Axe y contraste. No se planifica carrusel: la secuencia estática mantiene
-todo el contenido esencial disponible.
+teclado, Axe y contraste. La secuencia estática mantiene todo el contenido esencial
+disponible.
+
+## Integración D-066
+
+La secuencia estática sigue siendo la fuente primaria de evidencia, pero D-066
+permite una banda/carrusel manual secundario de casos o logos si se proporciona la
+misma información en una presentación estática accesible. La dirección de
+implementación futura se rige por «Evidencia en recorrido enriquecida» en
+`design-plan.md`: apertura fotográfica responsable, cards de servicios, caso–logo–
+foto relacionados y cierre de contacto canónico. No se añade «Cómo trabajamos» ni
+copy derivado sin aprobación separada.

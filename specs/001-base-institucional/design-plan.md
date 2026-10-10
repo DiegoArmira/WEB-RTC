@@ -260,3 +260,24 @@ La propuesta deberá comparar dos o tres direcciones y, para cada una, mostrar c
 resuelve: apertura, servicios, experiencia/logos, evidencia fotográfica, contacto,
 mobile y accesibilidad. La recomendación no se implementará sin aprobación de
 Diego/ORQ.
+
+## Integración visual v2 — D-066
+
+La dirección vigente es **Evidencia en recorrido enriquecida**. Conserva la
+relación factual caso–logo–fotografía de D-064 y adopta selectivamente patrones de
+D-065 para dar mayor jerarquía, ritmo y expresividad sin copiar a terceros.
+
+| Superficie | Decisión integrada | Condición verificable |
+|---|---|---|
+| Apertura | Composición de imagen RTC + bloque tipográfico, no necesariamente una imagen de fondo a pantalla completa. Puede usar overlay o panel dividido para preservar proporción, foco y contraste. | Elegir y documentar una sola MA candidata; no recortar personas, pantallas, documentos o contexto sin justificación. |
+| Servicios | Cuatro cards de servicio con jerarquía propia, numeración y recurso visual propio/semánticamente prescindible. | Sin dependencia ni asset externo; cada card conserva copy canónico completo y no se vuelve una cuadrícula clónica. |
+| Experiencia y logos | Cards amplias de caso con logo asociado, alcance factual y fotografía contextual cuando el vínculo esté documentado. | El logo nunca comunica aval; el texto esencial permanece visible fuera de cualquier secuencia desplazable. |
+| Secuencia de logos/casos | Puede existir una banda o carrusel manual secundario para exploración visual. | Controles visibles, teclado y táctil, sin autoplay; la misma información debe tener presentación estática accesible. |
+| Evidencia visual | La fotografía se integra junto a su servicio/caso y no como galería autónoma. | Aplicar la matriz individual MA-07…MA-11; no forzar `4:3 + cover`. |
+| Contacto | Cierre editorial de alto contraste, basado en el CTA y datos RTC ya canónicos. | No reutilizar «¿Comenzamos a colaborar?» ni crear nuevo lema sin aprobación explícita. |
+| Cómo trabajamos | Patrón de secuencia visual permitido como propuesta de información. | No incorporarlo al sitio mientras no exista proceso y copy RTC aprobados. |
+
+Quedan sustituidas las prohibiciones generales previas contra cards, hero fotográfico
+o carrusel. Las restricciones que siguen vigentes son: no usar estos recursos como
+decoración vacía, no esconder contenido esencial, no introducir copy inferido y no
+añadir assets/dependencias sin autorización.

@@ -169,3 +169,17 @@ quedan detenidos para QA Senior de Diego/ORQ.
 - Todo copy RTC nuevo, genérico o abstraído que no sea literal de fuente canónica
   queda como propuesta pendiente de revisión de Diego/ORQ; no podrá llegar a la
   interfaz por inferencia.
+
+## 2026-10-10 — Integración v2 D-066
+
+- Se reconcilian la recomendación «Evidencia en recorrido» de D-064 y los patrones
+  KAMBEA/D4Act de D-065: la secuencia estática conserva la evidencia primaria;
+  cards, hero fotográfico responsable y una banda manual secundaria pueden aportar
+  jerarquía sin ocultar información.
+- Se corrige la trazabilidad de `plan.md` y `tasks.md`: la implementación y pruebas
+  v1 de D-062 ya ocurrieron; lo pendiente es únicamente autorización para una
+  implementación visual v2.
+- El patrón «Cómo trabajamos» queda como posibilidad de diseño, no como sección
+  autorizada: requiere proceso RTC y copy explícitamente aprobados.
+- Esta integración no modifica implementación, pruebas, activos, configuración,
+  dependencias, despliegue ni publicación.

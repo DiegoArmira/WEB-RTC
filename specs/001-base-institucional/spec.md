@@ -150,3 +150,12 @@ referencia. Cuando una dirección necesite copy que no exista literalmente en un
 fuente RTC canónica, deberá marcarlo como propuesta pendiente de aprobación de
 Diego/ORQ: no se permite texto genérico de relleno ni inferir una afirmación
 pública.
+
+## Integración D-066 — dirección vigente antes de código
+
+La dirección futura es «Evidencia en recorrido enriquecida», definida en
+`design-plan.md`: apertura fotográfica responsable, cards de servicios, relación
+factual caso–logo–foto, secuencia manual secundaria sin ocultar evidencia y cierre
+de contacto canónico. No incorpora una sección «Cómo trabajamos» ni nuevo copy hasta
+que Diego/ORQ apruebe sus fuentes. D-066 conserva el alcance documental de D-064;
+una implementación visual v2 sigue requiriendo autorización explícita posterior.
