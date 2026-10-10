@@ -200,6 +200,20 @@ quedan detenidos para QA Senior de Diego/ORQ.
 publicación ni despliegue. Detenida para QA Senior de Diego/ORQ. Esta verificación
 no equivale a aceptación visual, funcional ni final.
 
+## 2026-10-10 — Preview temporal externa D-068
+
+- Diego/ORQ autoriza explícitamente avanzar con la corrección de portabilidad de
+  pruebas y con una preview temporal pública sin dominio mediante GitHub Pages.
+- El script `test:run` establece `NODE_ENV=test` mediante un wrapper Node
+  multiplataforma; así evita que una variable de entorno heredada en producción
+  cargue la variante no apta de React para pruebas.
+- El workflow `.github/workflows/pages-preview.yml` es manual (`workflow_dispatch`),
+  ejecuta typecheck, pruebas de componente y build antes de publicar `dist`; usa la
+  base `/WEB-RTC/` solo dentro de ese build.
+- La preview externa incluye MA-07…MA-11 conforme a D-061. Es pública, no sustituye
+  la QA Senior ni constituye producción. T-025 queda pendiente hasta que GitHub
+  Pages esté habilitado y el despliegue sea verificable.
+
 ### Fuentes y alcance ejecutado
 
 Se leyeron spec, design-plan, plan, tasks, esta bitácora y specs/AGENTS.md; se aplicaron

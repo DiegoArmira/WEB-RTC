@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "typecheck": "tsc -b --pretty false",
     "test": "vitest",
-    "test:run": "vitest run",
+    "test:run": "node scripts/run-vitest.cjs",
     "test:e2e": "playwright test",
     "test:a11y": "playwright test --grep @a11y"
   },

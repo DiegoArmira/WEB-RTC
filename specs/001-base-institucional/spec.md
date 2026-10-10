@@ -173,3 +173,18 @@ asociación caso–logo, no incorporar «Cómo trabajamos» y ejecutar los cinco
 Windows existentes. Al terminar, documentará rutas, requisito → prueba → resultado,
 evidencia D-01…D-04 y cualquier desviación; quedará detenida para QA Senior de
 Diego/ORQ.
+
+## Preview temporal externa — D-068
+
+D-068 autoriza corregir la portabilidad de las pruebas de componente y publicar la
+misma entrega v2 como preview temporal pública mediante GitHub Pages, sin dominio
+propio. La publicación sirve exclusivamente para obtener retroalimentación del
+cliente; no implica aceptación final, producción, DNS, backend, dependencias,
+activos o copy nuevos. Incluye MA-07…MA-11 bajo la habilitación previa de D-061.
+
+La publicación se ejecutará manualmente desde un workflow versionado, con build,
+typecheck y pruebas de componente previas. La URL esperada es
+`https://diegoarmira.github.io/WEB-RTC/`; queda sujeta a que GitHub Pages sea
+habilitado y el workflow termine correctamente. El sitio es público, por lo que
+Diego/ORQ podrá retirar la preview tras la revisión del cliente o mediante una
+decisión posterior.

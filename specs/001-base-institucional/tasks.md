@@ -64,3 +64,13 @@ D-067 para la v2 local; la entrega permanece detenida para QA Senior de Diego/OR
   adicionales; preservar accesibilidad y límites de contenido.
 - [x] T-022 — Ejecutar tipos, build, componente, E2E y Axe; registrar D-01…D-04 y
   solicitar QA Senior de Diego/ORQ.
+
+## Preview temporal D-068
+
+- [x] T-023 — Corregir la portabilidad de `test:run` para que establezca
+  `NODE_ENV=test` sin requerir sintaxis específica de Windows o Unix.
+- [x] T-024 — Preparar un workflow manual de GitHub Pages que ejecute typecheck,
+  pruebas de componente y build antes de desplegar el directorio `dist` con la base
+  `/WEB-RTC/`.
+- [ ] T-025 — Habilitar GitHub Pages, ejecutar el workflow y verificar la URL
+  pública temporal con evidencia; no equivale a aceptación final ni producción.
