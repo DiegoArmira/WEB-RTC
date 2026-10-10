@@ -1,9 +1,9 @@
 ---
 id: 001-base-institucional
 unit: U-04
-status: draft_for_orq_approval
+status: approved_for_planning
 date: 2026-10-10
-decision: D-056
+decision: D-060
 ---
 
 # Spec 001 — Base institucional
@@ -99,8 +99,7 @@ Solo después implementar el código mínimo para satisfacerlas.
 
 ## Activación Codex
 
-Este spec **no autoriza por sí solo** la ejecución de Codex. Tras aprobación ORQ
-del spec y autorización explícita de ejecución, usar este único texto en Codex/VS
-Code:
+Este spec está aprobado solamente para los artefactos de planificación indicados
+en D-060. Usar este único texto en una conversación nueva de Codex/VS Code:
 
-> Lee `specs/001-base-institucional/spec.md`, `specs/AGENTS.md` y la skill `.codex/skills/rtc-institutional-design/`. Este spec está autorizado para ejecución. Primero crea `plan.md`, `tasks.md`, `bitacora.md` y `design-plan.md`; después define y ejecuta las pruebas indicadas antes de implementar el código mínimo. Usa solo `docs/`, `knowledge/` y `src/assets/` como superficies fuente. No despliegues, no agregues capacidades excluidas y detente para elevar cualquier ambigüedad material, cambio de alcance, seguridad o arquitectura.
+> Lee `specs/001-base-institucional/spec.md`, `specs/AGENTS.md`, `.codex/skills/rtc-institutional-design/` y la skill global `frontend-design`. D-060 autoriza únicamente crear `plan.md`, `tasks.md`, `bitacora.md` y `design-plan.md` dentro de `specs/001-base-institucional/`. No escribas ni modifiques código, componentes, pruebas, configuración, dependencias ni activos; no ejecutes comandos de pruebas; no despliegues. Usa solo `docs/`, `knowledge/` y `src/assets/` como superficies fuente. Detente para elevar cualquier ambigüedad material, cambio de alcance, seguridad o arquitectura. Al finalizar, informa rutas creadas, supuestos, riesgos y bloqueos para la revisión de QA Senior de Diego/ORQ.
