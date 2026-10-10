@@ -46,3 +46,11 @@ aún; el resultado quedará detenido para QA Senior de Diego/ORQ.
   detecta violaciones.
 - La entrega sigue siendo estática, local/no productiva y no incluye capacidades
   excluidas por arquitectura v1.
+
+## Revisión v2 D-064 — solo planificación
+
+- [x] T-013 — Comparar tres direcciones y recomendar “Evidencia en recorrido”.
+- [x] T-014 — Eliminar del plan copy fotográfico inferido; usar solo título público canónico.
+- [x] T-015 — Definir vínculo, proporción, foco y recorte individual MA-07…MA-11.
+- [x] T-016 — Definir capturas D-01…D-04 junto con E2E/Axe futuros.
+- [ ] T-017 — Esperar autorización posterior antes de modificar implementación o pruebas.

@@ -89,3 +89,11 @@ Esta planificación no ejecutó ninguno.
 `knowledge/ux-conceptual-v1.md`, `knowledge/recorrido-conceptual.html`,
 `knowledge/restricciones-publicacion.md`, `knowledge/manifiesto-activos.md` y
 `src/assets/`.
+
+## Revisión v2 D-064
+
+Sin autorización de implementación. La siguiente autorización deberá partir de la
+dirección B de `design-plan.md`, retirar copy fotográfico inferido y aplicar la matriz
+individual MA-07…MA-11. La evidencia futura será D-01…D-04 más E2E móvil/escritorio,
+teclado, Axe y contraste. No se planifica carrusel: la secuencia estática mantiene
+todo el contenido esencial disponible.

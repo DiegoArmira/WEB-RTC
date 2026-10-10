@@ -150,6 +150,69 @@ casos se leen como evidencia factual y el oro solo conduce hacia una conversaci�
 No se solicita aprobación para añadir contenido, activos, funciones o arquitectura:
 esas acciones están fuera de alcance y se deben elevar si se proponen.
 
+---
+
+# Revisión de diseño v2 — D-064 (sin implementación)
+
+## Copy público del bloque fotográfico
+
+Eliminar el párrafo y los rótulos inferidos. El único texto visible será el título
+literal de U-01: **“Evidencia visual, fotografías y marcas”**. No habrá captions
+editoriales. Las alternativas de texto serán funcionales para accesibilidad, no copy
+público, y se validarán con QA.
+
+## Direcciones visuales
+
+| Dirección | Composición | Móvil/escritorio e interacción |
+|---|---|---|
+| A. Dossier territorial | Titular serif; servicios en columnas; casos en lista; fotos al cierre. | Apilado móvil; sin interacción. Descartada: relega evidencia a galería. |
+| B. Evidencia en recorrido **(recomendada)** | Apertura sobria; servicios en pares; cada tramo enlaza caso, logo y foto pertinente; secuencia de evidencia estática. | Banda completa en escritorio y secuencia vertical en móvil; CTA/enlaces normales. |
+| C. Archivo de casos | Fichas editoriales desiguales con logo y foto contextual. | Fichas independientes en móvil. Descartada: puede leer casos como portafolio/avales, contrario a RP-02. |
+
+### Recomendación B
+
+Azul para apertura/cierre, crema para lectura, blanco para servicios y oro solo para
+CTA/foco. Marca y titular constituyen el único gesto dominante. No se propone
+carrusel: ocultaría evidencia esencial y añadiría controles sin orientar mejor cinco
+activos. No hay métricas, gradientes, iconos añadidos, autoplay ni animación de
+entrada.
+
+## MA-07…MA-11: vínculo, proporción y recorte
+
+| Activo | Relación | Regla futura |
+|---|---|---|
+| MA-07 | Procesos de capacitación. | Mantener 4:3 natural; actividad completa; sin `cover`, sin cortar personas o pantalla. |
+| MA-08 | Líneas de base / trabajo de campo. | Mantener 4:3 natural; foco en diálogo; no recortar rostros, credenciales ni marcas. |
+| MA-09 | Apertura secundaria o experiencia, nunca hero. | Mantener 4:3 natural; foco en coordinación; no cortar tablet, credenciales o participantes. |
+| MA-10 | Capacitación / enfoque territorial. | Mantener 4:3 natural; encuadre comunitario completo; no cortar personas, posibles menores o contexto escolar. |
+| MA-11 | Investigación y levantamiento. | Conservar orientación vertical; columna estrecha o altura automática, sin imponer 4:3; no cortar intercambio, pantalla o documento. |
+
+RP-04 sigue siendo gate de publicación; este plan no autoriza edición ni recorte
+correctivo de archivos.
+
+## Skills: principio → decisión → descarte
+
+| Principio | Decisión v2 | Alternativa descartada |
+|---|---|---|
+| `frontend-design`: gastar audacia en un lugar | Apertura tipográfica azul con marca y titular. | Hero fotográfico o métricas sin respaldo. |
+| `frontend-design`: estructura informa | Secuencia caso–logo–foto y bandas por función. | Cards idénticas sin relación factual. |
+| `frontend-design`: movimiento deliberado | Sin autoplay ni reveal decorativo. | Carrusel sin orientación narrativa. |
+| `rtc-institutional-design`: activos desde narrativa | Cada foto se vincula a uso del manifiesto. | Galería intercambiable. |
+| `rtc-institutional-design`: sin avales | Logo junto a caso factual. | Muro de logos o “aliados”. |
+| `rtc-institutional-design`: responsive/foco | Horizontal estático en escritorio, vertical en móvil; foco visible. | Hover o interacción que oculte contacto. |
+
+## Evidencia visual futura
+
+| ID | Captura | Prueba |
+|---|---|---|
+| D-01 | Desktop 1440px: apertura y servicios. | Marca, titular, CTA, contraste, ausencia de hero genérico. |
+| D-02 | Desktop 1440px: experiencia y evidencia. | Caso–logo–foto, proporción natural y ausencia de avales. |
+| D-03 | Móvil 393px: apertura a servicios. | Orden lineal, legibilidad y CTA sin hover. |
+| D-04 | Móvil 393px: evidencia a contacto. | Fotos sin recorte forzado, contacto y foco visible. |
+
+Estas capturas se revisarán junto con E2E, Axe, teclado y contraste; no sustituyen
+RP-04.
+
 ## Corrección requerida antes de una v2 — D-064
 
 Diego/ORQ no aceptó visualmente la implementación v1. Este plan conserva sus

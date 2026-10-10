@@ -99,6 +99,27 @@ en `Pixel 5` y `Desktop Chrome`; ambos proyectos pasaron. Esta entrega queda det
 para revisión QA Senior de Diego/ORQ. Las condiciones RP-04 sobre publicación de
 fotografías siguen vigentes fuera de este entorno local/no productivo.
 
+## 2026-10-10 — Revisión de planificación visual v2, D-064
+
+**Alcance:** se modificaron solo los cuatro Markdown autorizados. No se modificaron
+código, CSS, pruebas, activos, configuración o dependencias; no se ejecutaron pruebas.
+
+- Se compararon Dossier territorial, Evidencia en recorrido y Archivo de casos; se
+  recomienda Evidencia en recorrido porque une evidencia y mensaje sin convertir
+  instituciones en avales.
+- Se descarta carrusel: ocultaría evidencia esencial y no aporta orientación para
+  cinco activos. Se propone secuencia estática en escritorio y lineal en móvil.
+- Se elimina del plan el copy fotográfico inferido: texto visible limitado a
+  “Evidencia visual, fotografías y marcas”, literal de U-01.
+- Se documentan reglas individuales de vínculo, proporción, foco y recorte para
+  MA-07…MA-11; queda prohibido el patrón uniforme `4:3 + object-fit: cover`.
+- `design-plan.md` mapea principios concretos de `frontend-design` y
+  `rtc-institutional-design` a decisiones y descartes, y define D-01…D-04 como
+  evidencia visual futura junto con E2E/Axe.
+
+**Gate:** D-064 no autoriza implementar. Dirección B, copy literal, fotos y capturas
+quedan detenidos para QA Senior de Diego/ORQ.
+
 ## 2026-10-10 — QA de planificación y autorización de implementación
 
 - Diego/ORQ aceptó el QA del paquete de planificación (D-061).
