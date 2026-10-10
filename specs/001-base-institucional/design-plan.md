@@ -149,3 +149,30 @@ casos se leen como evidencia factual y el oro solo conduce hacia una conversaci�
 
 No se solicita aprobación para añadir contenido, activos, funciones o arquitectura:
 esas acciones están fuera de alcance y se deben elevar si se proponen.
+
+## Corrección requerida antes de una v2 — D-064
+
+Diego/ORQ no aceptó visualmente la implementación v1. Este plan conserva sus
+restricciones de contenido y accesibilidad, pero no impone ya una prohibición
+general de cards, carrusel, secuencias horizontales ni elementos visuales
+contemporáneos. Su uso futuro debe justificarse por jerarquía, narrativa o
+orientación del usuario, no por decoración.
+
+La siguiente revisión de diseño deberá:
+
+1. eliminar del copy público cualquier explicación interna, inferida o de
+   gobernanza no presente en una fuente de copy canónica;
+2. proponer dos o tres direcciones visuales comparables, incluyendo composición,
+   tipografía, jerarquía y comportamiento móvil/escritorio;
+3. definir el tratamiento individual de MA-07…MA-11; conservar proporciones
+   naturales por defecto y documentar cualquier recorte/foco justificado;
+4. enlazar las imágenes a servicios o casos cuando aporten evidencia narrativa, en
+   vez de reunirlas como galería independiente sin relación contextual;
+5. si se propone un carrusel o interacción, asegurar controles visibles, teclado,
+   táctil, reducción de movimiento y acceso al contenido sin autoplay ni hover;
+6. documentar la aplicación concreta de `frontend-design` y
+   `rtc-institutional-design`, las alternativas descartadas y las capturas futuras
+   de evidencia visual.
+
+Esta sección corrige la planificación; no autoriza código, activos nuevos,
+dependencias, despliegue ni publicación.

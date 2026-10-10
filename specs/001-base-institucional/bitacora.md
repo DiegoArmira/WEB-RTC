@@ -118,3 +118,21 @@ fotografías siguen vigentes fuera de este entorno local/no productivo.
   resultados de pruebas y trazabilidad, y preparará la guía de validación visual.
 - La revisión técnica no sustituye la aceptación visual, funcional ni final de
   Diego/ORQ; toda entrega de Codex permanece detenida hasta su decisión explícita.
+
+## 2026-10-10 — QA visual v1 y corrección de planificación D-064
+
+- Diego/ORQ no acepta visualmente la implementación v1 como dirección final:
+  identifica una composición estática, tratamiento insuficiente de las imágenes y
+  falta de riqueza visual contemporánea.
+- La auditoría de Office confirma que el texto de contexto de fotografías escrito
+  en `App.tsx` no procede de una fuente de copy pública canónica; se clasifica como
+  copy no autorizado para una futura versión pública.
+- La auditoría retrospectiva de Codex confirma que todas las fotos se fuerzan a
+  `aspect-ratio: 4/3` y `object-fit: cover`, pese a que el plan requería
+  proporciones naturales. Su corrección debe decidirse por activo, no aplicarse de
+  manera uniforme.
+- Existe evidencia de lectura declarada y aplicación parcial de las skills de
+  diseño, pero no una trazabilidad persistente de alternativas creativas ni de su
+  impacto. La próxima planificación debe registrar esa relación explícitamente.
+- D-064 autoriza solo alinear la planificación de diseño v2; ningún cambio de
+  código queda autorizado hasta una nueva aprobación explícita de Diego/ORQ.

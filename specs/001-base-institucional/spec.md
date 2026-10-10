@@ -97,9 +97,42 @@ Solo después implementar el código mínimo para satisfacerlas.
   expresa suficientemente.
 - Registro de cualquier ambigüedad o desviación material en `bitacora.md`.
 
-## Activación Codex
+## Activación Codex D-062 — histórica, completada para v1
 
 Este spec está aprobado para la implementación test-first indicada en D-062. Usar
 este único texto en una conversación nueva de Codex/VS Code:
 
 > Lee `specs/001-base-institucional/spec.md`, `specs/AGENTS.md`, `plan.md`, `tasks.md`, `bitacora.md`, `design-plan.md`, `.codex/skills/rtc-institutional-design/` y la skill global `frontend-design`. D-062 autoriza la implementación test-first completa de esta spec. Primero crea y ejecuta pruebas que fallen; después implementa solo el código mínimo que las satisfaga. Usa exclusivamente `docs/`, `knowledge/` y `src/assets/` como superficies fuente y consume únicamente MA-01 a MA-11. Ejecuta `npm.cmd run typecheck`, `npm.cmd run build`, `npm.cmd run test:run`, `npm.cmd run test:e2e` y `npm.cmd run test:a11y`. No despliegues ni añadas backend, integraciones, capacidades excluidas, dependencias o activos no autorizados. Al finalizar, actualiza `bitacora.md` con rutas modificadas, requisito → prueba → resultado y salidas de verificación; entrega también evidencia móvil/escritorio. Detente ante cualquier ambigüedad material, cambio de alcance, seguridad o arquitectura y, tras entregar la evidencia, espera la revisión QA Senior de Diego/ORQ.
+
+Esta activación queda consumida por la implementación v1 y no autoriza cambios
+posteriores. Para la revisión v2 rige exclusivamente D-064.
+
+## Corrección de diseño v2 — D-064
+
+La implementación v1 conserva evidencia técnica satisfactoria, pero Diego/ORQ no
+aceptó su resultado visual. Antes de cualquier nueva modificación de código, Codex
+debe elaborar una revisión de diseño v2 **sin implementar** y responder a estos
+criterios:
+
+- El copy visible al público procede literalmente de `knowledge/copy-web-v1.md` u
+  otra fuente canónica indicada; se elimina el lenguaje interno, inferido o de
+  gobernanza que no esté aprobado como copy público.
+- Cada fotografía MA-07…MA-11 recibe una decisión explícita de proporción,
+  focalización, contexto y relación con el servicio/caso que apoya. No se permite
+  un recorte uniforme que contradiga las proporciones naturales del activo o
+  oculte información relevante.
+- La propuesta debe presentar dos o tres direcciones visuales distinguibles, con
+  una recomendación motivada. Puede usar cards, carrusel, secuencia horizontal u
+  otros elementos contemporáneos si sirven a la narrativa y no son decoración
+  genérica. Ningún contenido esencial puede depender de hover, autoplay o un
+  carrusel; los controles deben ser utilizables por teclado, táctil y con reducción
+  de movimiento.
+- La bitácora debe mapear de forma concreta los principios de `frontend-design` y
+  `rtc-institutional-design` a decisiones visuales, alternativas descartadas y
+  evidencia de QA propuesta. Declarar lectura de una skill no constituye evidencia
+  suficiente de aplicación.
+- La revisión debe definir capturas desktop y móvil como evidencia visual futura,
+  además de los controles de tipo, E2E y a11y vigentes.
+
+D-064 autoriza solo esta corrección de planificación. Una implementación v2
+requerirá una autorización posterior y explícita de Diego/ORQ.
