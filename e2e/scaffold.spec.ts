@@ -16,4 +16,24 @@ test('keyboard users receive focus on the contact shortcut', async ({ page }) =>
   await page.goto('/')
   await page.keyboard.press('Tab')
   await expect(page.getByRole('link', { name: /ir a contacto/i })).toBeFocused()
+  await expect(page.getByRole('link', { name: /ir a contacto/i })).toHaveCSS('outline-style', 'solid')
+})
+
+test('v2 preserves every photograph without cropping, reflows, and respects reduced motion', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' })
+  await page.goto('/')
+  await expect(page.locator('#presentacion img[src*="rtc-campo-01"]')).toBeVisible()
+  const photos = page.locator('img[src*="/photos/"]')
+  await expect(photos).toHaveCount(5)
+  for (const photo of await photos.all()) {
+    await photo.scrollIntoViewIfNeeded()
+    await expect(photo).toBeVisible()
+    await expect.poll(() => photo.evaluate((img: HTMLImageElement) => {
+      const box = img.getBoundingClientRect()
+      return img.complete && img.naturalWidth > 0 && Math.abs(box.width / box.height - img.naturalWidth / img.naturalHeight) < 0.01
+    })).toBe(true)
+    expect(await photo.evaluate((img) => getComputedStyle(img).objectFit)).not.toBe('cover')
+  }
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true)
+  await expect(page.locator('html')).toHaveCSS('scroll-behavior', 'auto')
 })

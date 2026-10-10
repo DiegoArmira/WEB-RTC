@@ -1,4 +1,4 @@
-import swisscontact from './assets/experience/swisscontact.png'
+﻿import swisscontact from './assets/experience/swisscontact.png'
 import saveTheChildren from './assets/experience/save-the-children.png'
 import globalCommunities from './assets/experience/global-communities.png'
 import helvetas from './assets/experience/helvetas.png'
@@ -22,4 +22,11 @@ export const cases = [
   ['Gestión integrada y sostenible de recursos hídricos', 'HELVETAS', 'Línea de base para el sistema de monitoreo del proyecto de gestión integrada y sostenible de los recursos hídricos en las cuencas de los ríos Selegua y Naranjo, y del lago de Atitlán. El estudio documentado estableció una primera medición de indicadores y combinó valores cuantitativos con análisis cualitativo.', helvetas, 'Logo de HELVETAS para el caso de gestión de recursos hídricos'],
   ['Fortalecimiento de competencias de grupos de mujeres', 'Creative Associates International', 'Asistencia técnica para fortalecer las competencias de cuatro grupos de mujeres de Santa Bárbara, Huehuetenango. El proceso documentado incluyó formación por competencias, acompañamiento y asistencia técnica orientados a la articulación del liderazgo y la participación comunitaria.', creative, 'Logo de Creative Associates International para el caso de fortalecimiento de competencias'],
 ] as const
-export const photos = [[capacitacion, 'Actividad de capacitación en un espacio de trabajo', 'Procesos de capacitación'], [campo, 'Diálogo de trabajo de campo entre dos personas', 'Líneas de base y trabajo de campo'], [experiencia, 'Reunión de coordinación institucional', 'Coordinación y experiencia'], [investigacion, 'Intercambio directo de información durante una entrevista', 'Investigación y levantamiento'], [territorio, 'Actividad comunitaria de capacitación en territorio', 'Capacitación y territorialidad']] as const
+// Contexts authorized by U-01 §5 / MA-07…MA-11; no named-project attribution.
+export const photos = [
+  { id: 'MA-07', src: capacitacion, alt: 'Actividad de capacitación en un espacio de trabajo', width: 5712, height: 4284 },
+  { id: 'MA-08', src: campo, alt: 'Diálogo de trabajo de campo entre dos personas', width: 5712, height: 4284 },
+  { id: 'MA-09', src: experiencia, alt: 'Reunión de coordinación institucional', width: 4032, height: 3024 },
+  { id: 'MA-11', src: investigacion, alt: 'Intercambio directo de información durante una entrevista', width: 960, height: 1280 },
+  { id: 'MA-10', src: territorio, alt: 'Actividad comunitaria de capacitación en territorio', width: 4032, height: 3024 },
+] as const

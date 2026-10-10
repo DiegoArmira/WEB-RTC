@@ -281,3 +281,35 @@ Quedan sustituidas las prohibiciones generales previas contra cards, hero fotogr
 o carrusel. Las restricciones que siguen vigentes son: no usar estos recursos como
 decoración vacía, no esconder contenido esencial, no introducir copy inferido y no
 añadir assets/dependencias sin autorización.
+
+## Concreción de ejecución D-067 — previa a componentes/estilos
+
+Se aplica D-066 sobre las prohibiciones históricas de v1. Apertura con MA-08,
+no MA-09: panel de texto azul separado de la fotografía de campo completa, 4:3
+natural, sin overlay, máscaras ni recorte. El diálogo y los dispositivos permanecen
+visibles; el contraste del texto no depende de la fotografía.
+
+Servicios: card de líneas de base amplia; dos cards de evaluación emparejadas para
+comparar sus diferencias; card de capacitación amplia con MA-07 completa. Numeración
+01–04 como índice de lectura del catálogo solicitado, no como pasos de un proceso;
+marcas CSS prescindibles y ocultas a tecnología asistiva, sin iconos/activos nuevos.
+
+MA-11 acompaña investigación en capacidades en columna vertical estrecha 3:4;
+MA-09 acompaña exclusivamente la introducción general de experiencia (4:3, nunca
+apertura). Los cinco casos conservan su logo, sin fotografías particulares: ninguna
+fuente canónica documenta qué proyecto corresponde a cada foto. MA-10 (4:3 completa)
+permanece en el quinto bloque, vinculada al contexto territorial/capacitación mediante
+alternativa funcional; solo el título canónico es copy visible, sin captions.
+
+Desktop: apertura texto | foto; base amplia / evaluaciones en par / capacitación
+texto | foto; capacidades texto | vertical; experiencia introducción | foto seguida
+de cinco casos estáticos; evidencia título | contexto territorial; contacto.
+Móvil: mismo orden DOM, todo apilado; imágenes fluidas con altura automática.
+Se conservan tokens, tipografías y foco del plan. No carrusel, autoplay ni movimiento
+nuevo: la secuencia estática basta y evita duplicar casos/logos sin utilidad.
+
+Pruebas definidas y ejecutadas antes de componentes/estilos: dos nuevos tests de
+componente y un E2E en ambos proyectos fallan contra v1 (foto ausente en apertura y
+copy inferido presente). Se verificará en verde la proporción natural de cada foto,
+reflow sin desbordamiento, reduced motion, teclado y Axe. D-01…D-04 documentarán la
+composición resultante; aceptación visual pendiente de Diego/ORQ.

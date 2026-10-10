@@ -3,8 +3,9 @@
 ## Estado y frontera
 
 La planificación inicial fue autorizada por D-060 y la implementación v1 se ejecutó
-bajo D-062. Este documento no autoriza una implementación posterior: la evolución
-visual v2 queda detenida hasta nueva autorización explícita de Diego/ORQ.
+bajo D-062. D-067 autorizó la ejecución local de la evolución visual D-066;
+implementación y evidencia constan en `bitacora.md`. La entrega v2 queda detenida
+para QA Senior de Diego/ORQ, sin autorización de publicación.
 
 La futura entrega será una landing estática React + TypeScript + Vite, local y no
 productiva, con contenido local separado de la composición y activos consumidos solo

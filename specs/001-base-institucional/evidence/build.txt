@@ -1,0 +1,24 @@
+﻿
+> web-rtc@0.0.0 build
+> tsc -b && vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 29 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                    0.50 kB │ gzip:  0.33 kB
+dist/assets/helvetas-CZ0bWMMw.png                  6.16 kB
+dist/assets/creative-associates-C7JLPxaN.jpeg      9.95 kB
+dist/assets/save-the-children-CcVbrhGX.png        27.61 kB
+dist/assets/global-communities-VdEp_IQS.png       33.12 kB
+dist/assets/rtc-consultoria-D7uFsjuZ.png          86.51 kB
+dist/assets/rtc-investigacion-01-C-yEzA5p.jpg    249.99 kB
+dist/assets/rtc-territorio-01-YUIE1WFI.jpg     2,488.54 kB
+dist/assets/rtc-experiencia-01-BDqIwIYj.jpg    2,825.96 kB
+dist/assets/rtc-capacitacion-01-CpBpVW6C.jpg   4,158.50 kB
+dist/assets/rtc-campo-01-D8e2GT3q.jpg          4,236.74 kB
+dist/assets/index-BzyUE5vc.css                     5.27 kB │ gzip:  1.72 kB
+dist/assets/index-1vHnTpEo.js                    232.58 kB │ gzip: 75.06 kB
+
+✓ built in 233ms

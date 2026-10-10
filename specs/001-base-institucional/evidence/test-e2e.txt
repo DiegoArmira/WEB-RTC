@@ -1,0 +1,17 @@
+﻿
+> web-rtc@0.0.0 test:e2e
+> playwright test
+
+
+Running 8 tests using 4 workers
+
+  ok 2 [desktop] › e2e\scaffold.spec.ts:3:1 › institutional journey exposes essential content and contact on mobile and desktop (2.4s)
+  ok 1 [mobile] › e2e\scaffold.spec.ts:3:1 › institutional journey exposes essential content and contact on mobile and desktop (2.9s)
+  ok 3 [desktop] › e2e\a11y.spec.ts:4:1 › @a11y institutional landing has no automatically detectable violations (2.5s)
+  ok 4 [mobile] › e2e\a11y.spec.ts:4:1 › @a11y institutional landing has no automatically detectable violations (3.4s)
+  ok 5 [desktop] › e2e\scaffold.spec.ts:15:1 › keyboard users receive focus on the contact shortcut (1.7s)
+  ok 6 [mobile] › e2e\scaffold.spec.ts:15:1 › keyboard users receive focus on the contact shortcut (1.6s)
+  ok 7 [desktop] › e2e\scaffold.spec.ts:22:1 › v2 preserves every photograph without cropping, reflows, and respects reduced motion (2.3s)
+  ok 8 [mobile] › e2e\scaffold.spec.ts:22:1 › v2 preserves every photograph without cropping, reflows, and respects reduced motion (2.2s)
+
+  8 passed (8.9s)

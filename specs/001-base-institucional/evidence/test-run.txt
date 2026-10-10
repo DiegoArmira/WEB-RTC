@@ -1,0 +1,13 @@
+﻿
+> web-rtc@0.0.0 test:run
+> vitest run
+
+
+ RUN  v5.0.3 C:/REPOSITORIOS/WEB-RTC
+
+
+ Test Files  1 passed (1)
+      Tests  5 passed (5)
+   Start at  00:14:51
+   Duration  2.75s (environment 54%, tests 25%, setup 13%, transform 7%, import 1%)
+

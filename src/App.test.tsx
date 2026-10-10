@@ -1,6 +1,7 @@
 import { render, screen, within } from '@testing-library/react'
 import { expect, test } from 'vitest'
 import App from './App'
+import { services } from './content'
 
 test('renders the six approved institutional blocks in conceptual order', () => {
   const { container } = render(<App />)
@@ -37,4 +38,32 @@ test('provides semantic landmarks, contact links, and an internal contact shortc
   expect(screen.getByRole('link', { name: /ir a contacto/i })).toHaveAttribute('href', '#contacto')
   expect(screen.getByRole('link', { name: /consultoriartc@gmail.com/i })).toHaveAttribute('href', 'mailto:consultoriartc@gmail.com')
   expect(screen.getByRole('link', { name: /3905 9217/i })).toHaveAttribute('href', 'tel:+50239059217')
+})
+
+test('v2 opens with a contextual RTC photograph and preserves complete service cards', () => {
+  const { container } = render(<App />)
+  expect(container.querySelector('#presentacion img[src*="rtc-campo-01"]')).toBeInTheDocument()
+  const cards = container.querySelectorAll('#servicios article')
+  expect(cards).toHaveLength(4)
+  services.forEach(([title, text], index) => {
+    expect(within(cards[index] as HTMLElement).getByRole('heading', { name: title })).toBeInTheDocument()
+    expect(within(cards[index] as HTMLElement).getByText(text)).toBeInTheDocument()
+    expect(cards[index].querySelector('[aria-hidden="true"]')).toHaveTextContent(`0${index + 1}`)
+  })
+  expect(container.querySelector('#servicios article:last-child img[src*="rtc-capacitacion-01"]')).toBeInTheDocument()
+})
+
+test('v2 removes inferred photo copy and associates photos only with documented contexts', () => {
+  const { container } = render(<App />)
+  const evidence = container.querySelector('#evidencia') as HTMLElement
+  expect(evidence.textContent?.trim()).toBe('Evidencia visual, fotografías y marcas')
+  expect(container.querySelector('figcaption')).toBeNull()
+  expect(container.querySelector('#capacidades img[src*="rtc-investigacion-01"]')).toBeInTheDocument()
+  expect(container.querySelector('#experiencia img[src*="rtc-experiencia-01"]')).toBeInTheDocument()
+  expect(container.querySelector('#evidencia img[src*="rtc-territorio-01"]')).toBeInTheDocument()
+  // The canonical sources do not identify a photograph as belonging to any named project.
+  expect(container.querySelector('.case img[src*="/photos/"]')).toBeNull()
+  expect(screen.queryByText(/Cómo trabajamos/i)).not.toBeInTheDocument()
+  const allowed = /rtc-consultoria|swisscontact|save-the-children|global-communities|helvetas|creative-associates|rtc-(campo|capacitacion|experiencia|territorio|investigacion)-01/
+  container.querySelectorAll('img').forEach((img) => expect(img.getAttribute('src')).toMatch(allowed))
 })

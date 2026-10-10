@@ -3,8 +3,8 @@
 ## Estado de esta unidad
 
 T-001 a T-005 fueron completadas en planificación; T-006 a T-012 se ejecutaron bajo
-D-062 para la v1 y su evidencia quedó registrada. La evolución visual v2 permanece
-detenida para QA Senior de Diego/ORQ y no autoriza una nueva implementación.
+D-062 para la v1 y su evidencia quedó registrada. T-020 a T-022 se completaron bajo
+D-067 para la v2 local; la entrega permanece detenida para QA Senior de Diego/ORQ.
 
 - [x] T-001 — Leer `spec.md`, `specs/AGENTS.md`, las fuentes canónicas y las skills
   requeridas; confirmar D-060 y límites de superficie.
@@ -53,14 +53,14 @@ detenida para QA Senior de Diego/ORQ y no autoriza una nueva implementación.
 - [x] T-014 — Eliminar del plan copy fotográfico inferido; usar solo título público canónico.
 - [x] T-015 — Definir vínculo, proporción, foco y recorte individual MA-07…MA-11.
 - [x] T-016 — Definir capturas D-01…D-04 junto con E2E/Axe futuros.
-- [ ] T-017 — Esperar autorización posterior antes de modificar implementación o pruebas.
+- [x] T-017 — Esperar autorización posterior antes de modificar implementación o pruebas (recibida en D-067).
 - [x] T-018 — Integrar D-065 y la revisión v2 con D-066: patrones de referencia,
   límites de copy y reconciliación de carrusel/cards.
 - [x] T-019 — Recibir autorización explícita D-067 para implementar la evolución
   visual v2 y actualizar pruebas/evidencia proporcionalmente.
-- [ ] T-020 — Definir o ajustar primero pruebas proporcionales de la dirección D-066
+- [x] T-020 — Definir o ajustar primero pruebas proporcionales de la dirección D-066
   antes de modificar componentes o estilos.
-- [ ] T-021 — Implementar la evolución visual v2 sin dependencias, assets ni copy
+- [x] T-021 — Implementar la evolución visual v2 sin dependencias, assets ni copy
   adicionales; preservar accesibilidad y límites de contenido.
-- [ ] T-022 — Ejecutar tipos, build, componente, E2E y Axe; registrar D-01…D-04 y
+- [x] T-022 — Ejecutar tipos, build, componente, E2E y Axe; registrar D-01…D-04 y
   solicitar QA Senior de Diego/ORQ.
