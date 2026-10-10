@@ -213,6 +213,11 @@ no equivale a aceptación visual, funcional ni final.
 - La preview externa incluye MA-07…MA-11 conforme a D-061. Es pública, no sustituye
   la QA Senior ni constituye producción. T-025 queda pendiente hasta que GitHub
   Pages esté habilitado y el despliegue sea verificable.
+- Intento de activación: la API de GitHub respondió HTTP 422, «Your current plan
+  does not support GitHub Pages for this repository». El repositorio continúa
+  privado, no existe URL pública y no se expuso contenido. Cualquier alternativa
+  requiere una decisión explícita de Diego/ORQ sobre proveedor o repositorio de
+  preview.
 
 ### Fuentes y alcance ejecutado
 
