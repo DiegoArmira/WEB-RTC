@@ -55,6 +55,14 @@ no sustituye el spec, U-02, `knowledge/`, los activos autorizados, pruebas ni la
 aprobación de Diego como QA Senior. Su revisión visual consume la evidencia ya
 requerida por la spec; no añade runners, dependencias ni comandos de prueba.
 
+## Reparto de QA
+
+Diego/ORQ es QA Senior: valida visualmente la página en ejecución, sus recorridos,
+botones, enlaces, comportamiento desktop/móvil y aceptación final. Office prepara
+para esa revisión una guía de despliegue local y escenarios observables; además
+revisa código, alcance, diffs, mensajes, salidas de pruebas y trazabilidad. Office
+no sustituye la aceptación visual, funcional ni final de Diego/ORQ.
+
 ## Superficies canónicas
 
 Una spec autorizada usa docs/, knowledge/, src/assets/ y specs/AGENTS.md; no consulta el Vault ni fuentes originales para redescubrir contenido, UX o assets.

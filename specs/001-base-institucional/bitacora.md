@@ -109,3 +109,12 @@ fotografías siguen vigentes fuera de este entorno local/no productivo.
   mínimos y los cinco comandos de verificación previstos por la spec.
 - No se han creado o modificado todavía componentes, pruebas, configuración,
   dependencias ni activos como resultado de D-061/D-062.
+
+## 2026-10-10 — Reparto de QA D-063
+
+- Diego/ORQ realizará el QA Senior visual y de experiencia: ejecución local,
+  recorridos, botones, enlaces y comportamiento en desktop/móvil.
+- Office revisará de forma técnica el código, alcance, diffs, mensajes, evidencias,
+  resultados de pruebas y trazabilidad, y preparará la guía de validación visual.
+- La revisión técnica no sustituye la aceptación visual, funcional ni final de
+  Diego/ORQ; toda entrega de Codex permanece detenida hasta su decisión explícita.
