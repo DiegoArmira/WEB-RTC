@@ -58,6 +58,47 @@ activos se eleva antes de corregirse o implementarse.
   mantienen contenido textual autorizado; su uso no se infiere.
 - La elección concreta de CSS/componentes queda fuera de D-060 y no se ha iniciado.
 
+## 2026-10-10 — Implementación D-062
+
+**Resultado:** landing estática local implementada test-first. Se crearon primero las
+pruebas de componente, E2E y a11y; la primera ejecución de `test:run` falló con 3
+fallos contra el scaffold (sin bloques, copy ni landmarks), antes de sustituirlo.
+
+### Rutas modificadas
+
+- `src/App.tsx`, `src/App.css`, `src/index.css`: seis bloques semánticos, responsive,
+  CTA interno, contacto y foco visible.
+- `src/content.ts`: copy trazable, casos y las rutas MA-02…MA-11 separados de la
+  composición; `App.tsx` consume MA-01. No se usan assets de scaffold.
+- `src/App.test.tsx`, `src/test/setup.ts`: prueba de orden/contenido, asociaciones
+  caso–logo y landmarks/enlaces.
+- `e2e/scaffold.spec.ts`, `e2e/a11y.spec.ts`: recorrido móvil/escritorio, teclado y
+  Axe con cero violaciones.
+
+### Requisito → prueba → resultado
+
+| Requisito | Prueba | Resultado |
+|---|---|---|
+| R-01 / AC-01 | `src/App.test.tsx`: seis bloques, jerarquía y copy esencial. | Pasa: 3 pruebas de componente. |
+| R-02 / AC-02 | `src/App.test.tsx`: cinco casos y su logo MA asociado; sin WhatsApp. | Pasa. |
+| R-03 | `e2e/scaffold.spec.ts`: recorrido y contacto en proyectos `mobile` y `desktop`. | Pasa en ambos viewports. |
+| R-04 | Componente: landmarks/enlaces; E2E: foco de teclado en CTA. | Pasa en móvil y escritorio. |
+| R-05 | `e2e/a11y.spec.ts` con Axe. | Pasa: cero violaciones en móvil y escritorio. |
+| R-06 / AC-03 / AC-05 | Revisión de rutas, tipo y build. | Pasa; sin dependencias ni capacidades excluidas. |
+
+### Salidas de verificación
+
+- `npm.cmd run typecheck`: pasa, sin salida de errores.
+- `npm.cmd run build`: pasa; Vite transforma 29 módulos y genera `dist` local.
+- `npm.cmd run test:run`: pasa, 1 archivo / 3 pruebas.
+- `npm.cmd run test:e2e`: pasa, 6 pruebas (recorrido, teclado y a11y en móvil y escritorio).
+- `npm.cmd run test:a11y`: pasa, 2 pruebas Axe (móvil y escritorio), cero violaciones.
+
+**Evidencia responsive:** Playwright ejecutó el recorrido institucional y el contacto
+en `Pixel 5` y `Desktop Chrome`; ambos proyectos pasaron. Esta entrega queda detenida
+para revisión QA Senior de Diego/ORQ. Las condiciones RP-04 sobre publicación de
+fotografías siguen vigentes fuera de este entorno local/no productivo.
+
 ## 2026-10-10 — QA de planificación y autorización de implementación
 
 - Diego/ORQ aceptó el QA del paquete de planificación (D-061).
