@@ -56,5 +56,11 @@ detenida para QA Senior de Diego/ORQ y no autoriza una nueva implementación.
 - [ ] T-017 — Esperar autorización posterior antes de modificar implementación o pruebas.
 - [x] T-018 — Integrar D-065 y la revisión v2 con D-066: patrones de referencia,
   límites de copy y reconciliación de carrusel/cards.
-- [ ] T-019 — Esperar autorización explícita para implementar la evolución visual v2
-  y actualizar pruebas/evidencia proporcionalmente.
+- [x] T-019 — Recibir autorización explícita D-067 para implementar la evolución
+  visual v2 y actualizar pruebas/evidencia proporcionalmente.
+- [ ] T-020 — Definir o ajustar primero pruebas proporcionales de la dirección D-066
+  antes de modificar componentes o estilos.
+- [ ] T-021 — Implementar la evolución visual v2 sin dependencias, assets ni copy
+  adicionales; preservar accesibilidad y límites de contenido.
+- [ ] T-022 — Ejecutar tipos, build, componente, E2E y Axe; registrar D-01…D-04 y
+  solicitar QA Senior de Diego/ORQ.

@@ -159,3 +159,17 @@ factual caso–logo–foto, secuencia manual secundaria sin ocultar evidencia y 
 de contacto canónico. No incorpora una sección «Cómo trabajamos» ni nuevo copy hasta
 que Diego/ORQ apruebe sus fuentes. D-066 conserva el alcance documental de D-064;
 una implementación visual v2 sigue requiriendo autorización explícita posterior.
+
+## Implementación visual v2 — D-067
+
+D-067 autoriza implementar test-first la evolución visual D-066, únicamente en el
+entorno local/no productivo. Se pueden modificar los componentes, estilos y pruebas
+proporcionales necesarios para cumplir la dirección integrada. Se mantienen las
+prohibiciones de dependencias nuevas, assets nuevos, copy no aprobado, backend,
+integraciones, despliegue y producción.
+
+La ejecución debe mantener seis bloques, usar solo MA-01…MA-11, preservar la
+asociación caso–logo, no incorporar «Cómo trabajamos» y ejecutar los cinco controles
+Windows existentes. Al terminar, documentará rutas, requisito → prueba → resultado,
+evidencia D-01…D-04 y cualquier desviación; quedará detenida para QA Senior de
+Diego/ORQ.

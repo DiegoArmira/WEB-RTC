@@ -183,3 +183,13 @@ quedan detenidos para QA Senior de Diego/ORQ.
   autorizada: requiere proceso RTC y copy explícitamente aprobados.
 - Esta integración no modifica implementación, pruebas, activos, configuración,
   dependencias, despliegue ni publicación.
+
+## 2026-10-10 — Autorización de implementación visual v2 D-067
+
+- Diego/ORQ autoriza implementar test-first la dirección D-066, sin dependencias,
+  assets o copy no aprobados y sin despliegue.
+- La ejecución debe partir de pruebas proporcionales, conservar los seis bloques y
+  los límites de contenido, y entregar los cinco controles técnicos más D-01…D-04
+  para QA Senior.
+- Ninguna aceptación visual, funcional, de publicación o producción se infiere de
+  esta autorización.
