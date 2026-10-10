@@ -2,9 +2,9 @@
 
 ## Estado de esta unidad
 
-Solo T-001 a T-004 fueron autorizadas por D-060 y quedan documentadas en este
-paquete. T-005 en adelante son trabajo futuro y requieren autorización posterior;
-no se ejecutaron.
+T-001 a T-005 están aprobadas y T-006 a T-012 fueron autorizadas para ejecución
+test-first por D-062. Ninguna tarea de implementación o pruebas se ha ejecutado
+aún; el resultado quedará detenido para QA Senior de Diego/ORQ.
 
 - [x] T-001 — Leer `spec.md`, `specs/AGENTS.md`, las fuentes canónicas y las skills
   requeridas; confirmar D-060 y límites de superficie.
@@ -17,8 +17,8 @@ no se ejecutaron.
 
 ## Trabajo futuro — no autorizado por D-060
 
-- [ ] T-005 — Obtener aprobación QA Senior Diego/ORQ del paquete de planificación y
-  resolver el gate de fotos antes de cualquier publicación.
+- [x] T-005 — Obtener aprobación QA Senior Diego/ORQ del paquete de planificación y
+  resolver el gate de fotos para la implementación local/no productiva (D-061).
 - [ ] T-006 — Definir pruebas de componente que fallen para R-01/R-02/R-04:
   secciones, orden, contenido esencial, asociaciones caso–logo, landmarks,
   encabezados y teclado.

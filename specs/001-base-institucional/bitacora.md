@@ -1,6 +1,6 @@
 # Bitácora — Spec 001 Base institucional
 
-## 2026-10-09 — Planificación D-060
+## 2026-10-10 — Planificación D-060
 
 **Estado:** completada únicamente la planificación autorizada. No se modificó código,
 componentes, pruebas, configuración, dependencias, activos ni despliegue; tampoco se
@@ -57,3 +57,14 @@ activos se eleva antes de corregirse o implementarse.
 - La ausencia de fotos habilitadas no impide cumplir R-01…R-06 si los bloques
   mantienen contenido textual autorizado; su uso no se infiere.
 - La elección concreta de CSS/componentes queda fuera de D-060 y no se ha iniciado.
+
+## 2026-10-10 — QA de planificación y autorización de implementación
+
+- Diego/ORQ aceptó el QA del paquete de planificación (D-061).
+- Diego/ORQ habilitó MA-07…MA-11 para la implementación local/no productiva tras su
+  revisión de privacidad, consentimiento, contexto, pantallas/documentos y marcas.
+  No autoriza despliegue ni producción.
+- D-062 autoriza la implementación test-first, incluidas las pruebas, los componentes
+  mínimos y los cinco comandos de verificación previstos por la spec.
+- No se han creado o modificado todavía componentes, pruebas, configuración,
+  dependencias ni activos como resultado de D-061/D-062.

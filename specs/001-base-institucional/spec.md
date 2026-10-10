@@ -1,9 +1,9 @@
 ---
 id: 001-base-institucional
 unit: U-04
-status: approved_for_planning
+status: approved_for_implementation
 date: 2026-10-10
-decision: D-060
+decision: D-062
 ---
 
 # Spec 001 — Base institucional
@@ -99,7 +99,7 @@ Solo después implementar el código mínimo para satisfacerlas.
 
 ## Activación Codex
 
-Este spec está aprobado solamente para los artefactos de planificación indicados
-en D-060. Usar este único texto en una conversación nueva de Codex/VS Code:
+Este spec está aprobado para la implementación test-first indicada en D-062. Usar
+este único texto en una conversación nueva de Codex/VS Code:
 
-> Lee `specs/001-base-institucional/spec.md`, `specs/AGENTS.md`, `.codex/skills/rtc-institutional-design/` y la skill global `frontend-design`. D-060 autoriza únicamente crear `plan.md`, `tasks.md`, `bitacora.md` y `design-plan.md` dentro de `specs/001-base-institucional/`. No escribas ni modifiques código, componentes, pruebas, configuración, dependencias ni activos; no ejecutes comandos de pruebas; no despliegues. Usa solo `docs/`, `knowledge/` y `src/assets/` como superficies fuente. Detente para elevar cualquier ambigüedad material, cambio de alcance, seguridad o arquitectura. Al finalizar, informa rutas creadas, supuestos, riesgos y bloqueos para la revisión de QA Senior de Diego/ORQ.
+> Lee `specs/001-base-institucional/spec.md`, `specs/AGENTS.md`, `plan.md`, `tasks.md`, `bitacora.md`, `design-plan.md`, `.codex/skills/rtc-institutional-design/` y la skill global `frontend-design`. D-062 autoriza la implementación test-first completa de esta spec. Primero crea y ejecuta pruebas que fallen; después implementa solo el código mínimo que las satisfaga. Usa exclusivamente `docs/`, `knowledge/` y `src/assets/` como superficies fuente y consume únicamente MA-01 a MA-11. Ejecuta `npm.cmd run typecheck`, `npm.cmd run build`, `npm.cmd run test:run`, `npm.cmd run test:e2e` y `npm.cmd run test:a11y`. No despliegues ni añadas backend, integraciones, capacidades excluidas, dependencias o activos no autorizados. Al finalizar, actualiza `bitacora.md` con rutas modificadas, requisito → prueba → resultado y salidas de verificación; entrega también evidencia móvil/escritorio. Detente ante cualquier ambigüedad material, cambio de alcance, seguridad o arquitectura y, tras entregar la evidencia, espera la revisión QA Senior de Diego/ORQ.
